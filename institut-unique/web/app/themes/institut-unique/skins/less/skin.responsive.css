@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* Responsive styles
+-------------------------------------------------------------- */
+
+/*
+Apple iPhone 5, 5S & 5C 
+Apple iPod Touch (5th generation)
+*/
+/* With side menu
+@media (min-width: 1366px) and (max-width: 1679px) {
+*/
+/* Without side menu */
+
+@media (max-width: 1439px) {
+	html, body {	font-size: 12px; }
+	.isotope_item_masonry .post_title {
+		font-size: 1.3em;
+	}
+	input[type="submit"], input[type="reset"], input[type="button"], button, .sc_button {
+		font-size: 10.2px;
+	}
+	input[type="text"], input[type="tel"], input[type="number"], input[type="email"], input[type="search"], input[type="password"], select, textarea {
+		font-size: 12px;
+	}
+	
+}
+
+/*
+Apple iPhone 4 & 4S
+Apple iPod Touch (4th generation)
+*/
+/* With side menu
+@media (min-width: 1280px) and (max-width: 1365px) {
+*/
+/* Without side menu */
+@media  (max-width: 1135px) {
+	h1 { font-size:2.6em; }		
+	h2 { font-size:2em; }
+	h3 { font-size:1.54em; }	
+	h4 { font-size:1.385em; }
+	h5 { font-size:1.077em; }	
+	h6 { font-size:1.077em; }		
+		
+	.sc_item_title{
+		font-size:2.6em;
+	}
+	.sc_dropcaps .sc_dropcaps_item {
+		font-size: 3.32em;
+	}
+	.sc_dropcaps.sc_dropcaps_style_1 .sc_dropcaps_item {
+		font-size: 4.149em;
+	}
+	.sc_dropcaps.sc_dropcaps_style_4 .sc_dropcaps_item {
+		font-size: 2.5em
+	}
+	
+}
+
+
+
+/*
+Sony Xperia
+LG Optimus
+Blackberry Storm 3, Torch 9850 & Torch 9860
+Nokia Lumia 610, 710 & 800
+HTC Desire, Desire Z, Desire S & One V
+Samsung Galaxy
+*/
+/* With side menu
+@media (min-width: 768px) and (max-width: 1279px) {
+*/
+/* Without side menu */
+@media  (max-width: 959px) {
+	
+}
+
+
+
+/*
+Portrait orientation
+
+Sony Xperia
+LG Optimus
+Blackberry Storm 3, Torch 9850 & Torch 9860
+Nokia Lumia 610, 710 & 800
+HTC Desire, Desire Z, Desire S & One V
+Samsung Galaxy
+*/
+@media (max-width: 767px) {
+
+}
+
+
+
+
+/*
+Very common low res
+*/
+@media (max-width: 479px) {
+	h1 { font-size:2.2em; }		
+	h2 { font-size:1.8em; }
+	h3 { font-size:1.54em; }	
+	h4 { font-size:1.385em; }
+	h5 { font-size:1.077em; }	
+	h6 { font-size:1.077em; }		
+		
+	.sc_item_title{
+		font-size:2.2em;
+	}
+}
