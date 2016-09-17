@@ -1,0 +1,304 @@
+body{
+	font-family: 'lato';
+	font-style: normal;
+	height:100%;
+	font-size: 20px;
+	font-weight: 300;
+	-webkit-box-sizing: border-box;‌​
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+.wrapper{
+	width: 100%; 
+}
+.section1 .container, .section2 .container, .contact .container, .footer .container{
+	padding: 100px 50px;
+	position: relative;
+    z-index: 3;
+}
+h1{
+	font-family: 'aleo';
+	color: #3f97d3;
+	font-weight: bold;
+	font-size: 55px;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+	padding: 0 0 50px 20px;
+}
+/******nav******/
+nav{
+	font-size: 14px;
+	font-family: 'aleo';
+	font-weight: normal;
+}
+.navbar-default{
+	background-color: transparent;
+	border: none;
+}
+.navbar>.container .navbar-brand{
+	margin: 0;
+}
+
+.navbar-default .navbar-nav>li>a{
+	letter-spacing: 1px;
+	color: white;
+	padding-top: 25px;
+}
+.navbar-brand{
+	padding: 0;
+}
+.navbar-nav{
+	padding: 20px 0;
+	margin: 0;
+}
+.navbar .container ul li ul li{
+	list-style-type: none;
+}
+.navbar .container ul li ul li button{
+	background-color: transparent;
+	border: solid 1px white;
+	width: 9em;
+	padding: 0.5em 0;
+	margin-bottom: 0.5em;
+	color: white;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.navbar .container ul li ul li button.no-border{
+	border: none;
+}
+}
+.navbar-default .navbar-toggle:hover{
+	background-color: transparent !important;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+.navbar-default.navbar-shrink {
+    height: 120px;
+    padding: 10px 0;
+    background-color: rgba(18,45,63, 0.9);
+}
+.navbar-default .navbar-nav>.active>a{
+	background-color: inherit;
+	color: #FFF;
+	border-bottom: solid 3px white;
+}
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:visited,.navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:visited,.navbar-default .navbar-nav>.active>a:active,.navbar-default .navbar-nav>.active>a:focus{
+	background-color: transparent;
+	color: #AAA;
+}
+.navbar .container ul li ul li a button:hover{
+	color: #AAA;
+}
+/******hero*****/
+.hero {
+    height: 40em;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.hero h1{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-align: right;
+	font-size: 45px;
+	letter-spacing: 2px;
+	line-height: 70px;
+	text-shadow: 1px 1px 20px #333;
+}
+.hero .text-centered{
+	width: 400px;
+	position: fixed;
+	z-index: 3;	
+	right: 20%;
+	top: 20%;
+}
+.color-filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top:0;
+}
+.-opacity-normal{
+	opacity: 0.8;
+}
+.-opacity-dark{
+	opacity: 0.9;
+}
+
+.hero-centered img {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+/******section1*****/
+section.section1 {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.section1-centered img {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+/******section2*****/
+section.section2 {
+	color: #FFF;
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section.section2 h1{
+	color: white;
+}
+
+.informatique, .reseaux, .wifi, .telephone, .son, .camera{
+	text-align: center;
+	padding: 40px;
+}
+
+.informatique strong, .reseaux strong, .wifi strong, .telephone strong, .son strong, .camera strong{
+	font-family: 'aleo';
+	font-weight: 100;
+	font-size: 30px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.section2-centered img {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+/******contact*****/
+section.contact {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+section.contact h1{
+	color: white;
+}
+.contact-centered img {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+section.contact div[role=form]{
+	color: white;
+	font-family: 'aleo';
+	width: 100%;
+}
+section.contact div[role="form"] p{
+	letter-spacing: 1px;
+}
+
+input[type="text"], input[type="email"], textarea {
+     width: 100%;
+     margin-bottom: 20px;
+     margin-top: 10px;
+     background-color: rgba(63, 151, 211, 0.7);
+     border: 1px solid #FFF;
+}
+input[type="text"], input[type="email"], input[type="submit"]{
+	height: 40px;
+}
+input[type="radio"]{
+	-webkit-appearance: none;
+	margin-top: 10px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+    background-color: rgba(63, 151, 211, 0.7);
+    border: 1px solid #FFF;	
+}
+input[type="radio"]:checked{
+	background-color: white;
+}
+
+input[type="submit"]{
+	width: 50%;
+	background: transparent;
+	border: 1px solid #FFF;
+	font-weight: normal;
+}
+
+.widget_bizohourswidget{
+	width: 100%;
+	padding: 50px 0;
+	border: 1px solid #FFF;
+	background: rgba(73, 73, 73, 0.75);
+	color: #FFF;
+	text-align: center;
+}
+.widget_bizohourswidget h2{
+	font-family: 'aleo';
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+.widget_bizohourswidget p{
+	width: 100%;
+}
+
+
+/******footer*****/
+.footer{
+	position:relative;
+	z-index: 4;
+	letter-spacing: 1px;
+	font-weight: normal;
+	line-height: 50px;
+	color: #FFF;
+	background-color: #4a4949;
+}
+.footer span{
+	font-weight: 300;
+	font-size: 16px;
+}
+.footer img{
+	width: 200px;
+	height: auto;
+}
+
+
+.footer .copyright{
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 16px;
+	margin-top: 60px;
+	text-align: center;
+}
+.partenaire{
+	margin-bottom: 30px;
+	text-align: right;
+}
+
+

@@ -1,0 +1,66 @@
+// ==========================================================================
+// MODULES - PRODUCTS CARD
+// ==========================================================================
+
+.products_card
+  .title
+    color: $mm-grey
+    font-weight: normal
+    &.-regular
+      margin-bottom: em(5)
+    &.-small
+      margin-bottom: em(30)
+      +max-width($tablet-small)
+        margin-bottom: em(8)
+
+  a.btn.-outline
+    display: inline-block
+    margin-bottom: em(20)
+    +max-width($phone-large)
+      margin: 0 auto em(20) auto
+      text-align: center
+  table
+    width: 100%
+    margin: em(40) 0
+    border: 1px solid $l-grey
+    color: $mm-grey
+    tr
+      border: 1px solid $l-grey
+      th, td
+        border: 1px solid $l-grey
+        padding: em(20) em(10)
+      th
+        text-transform: uppercase
+        text-align: left
+        +max-width($phone-large)
+          text-align: center
+        &:before
+          margin-right: em(10)
+          color: $black
+        &.icon-wrench
+          +icon(before, icon-wrench)
+        &.icon-basket
+          +icon(before, icon-basket)
+      td
+        vertical-align: middle
+        &:first-child
+          text-align: center
+          font-size: em(28)
+          text-transform: uppercase
+        img
+          display: inline
+          max-width: em(150)
+          margin-right: em(10)
+          +max-width($phone-large)
+            margin: 0 0 em(5) 0
+      a
+        &:link
+          font-style: italic
+          text-decoration: underline
+          font-size: em(12)
+          +max-width($phone-large)
+            display: block
+            text-align: center
+
+        &:hover
+          color: $mm-grey

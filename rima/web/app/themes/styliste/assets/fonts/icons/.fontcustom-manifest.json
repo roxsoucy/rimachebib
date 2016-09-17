@@ -1,0 +1,81 @@
+{
+  "checksum": {
+    "previous": "c81c97d24341efcfefd1994b8c5926f4ce2ccae740ab03a182128e655a67c426",
+    "current": "c81c97d24341efcfefd1994b8c5926f4ce2ccae740ab03a182128e655a67c426"
+  },
+  "fonts": [
+    "../icons/icons.ttf",
+    "../icons/icons.svg",
+    "../icons/icons.woff",
+    "../icons/icons.eot"
+  ],
+  "glyphs": {
+    "air": {
+      "codepoint": 61696,
+      "source": "svg/air.svg"
+    },
+    "chauffage": {
+      "codepoint": 61697,
+      "source": "svg/chauffage.svg"
+    },
+    "climatisation": {
+      "codepoint": 61698,
+      "source": "svg/climatisation.svg"
+    },
+    "clock": {
+      "codepoint": 61699,
+      "source": "svg/clock.svg"
+    },
+    "icon-basket": {
+      "codepoint": 61700,
+      "source": "svg/icon-basket.svg"
+    },
+    "icon-wrench": {
+      "codepoint": 61704,
+      "source": "svg/icon-wrench.svg"
+    },
+    "triangle": {
+      "codepoint": 61701,
+      "source": "svg/triangle.svg"
+    },
+    "triangle-left": {
+      "codepoint": 61702,
+      "source": "svg/triangle-left.svg"
+    },
+    "triangle-right": {
+      "codepoint": 61703,
+      "source": "svg/triangle-right.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "icons",
+    "force": false,
+    "input": {
+      "templates": "../icons",
+      "vectors": "svg"
+    },
+    "no_hash": true,
+    "output": {
+      "_icons.sass": "../../sass/0.base/helpers/",
+      "css": "../icons",
+      "fonts": "../icons",
+      "preview": "../icons"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "templates": [
+      "_icons.sass"
+    ]
+  },
+  "templates": [
+    "../../sass/0.base/helpers/_icons.sass"
+  ]
+}

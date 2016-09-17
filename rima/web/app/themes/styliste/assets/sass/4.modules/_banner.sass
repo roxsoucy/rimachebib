@@ -1,0 +1,48 @@
+// ==========================================================================
+// MODULES - BANNER
+// ==========================================================================
+
+.banner
+  height: em(680)
+  margin-top: em(120)
+  position: relative
+  background-position: center
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: cover
+  +max-width($tablet-large)
+    margin-top: em(75)
+    background-attachment: scroll
+  +max-width($phone-large)
+    height: em(570)
+  .wrapper
+    height: 100%
+    .title
+      color: white
+      margin-top: em(25)
+      line-height: em(18)
+      +max-width($phone-large)
+        margin-top: 0
+
+  &.-default
+    height: 27em
+    +max-width($tablet-large)
+      height: 18em
+      padding-bottom: 5em
+    .wrapper
+      width: 100%
+      .vert-center
+        +align-children($v-align: middle)
+        height: 100%
+        width: 100%
+      .heading
+        text-align: center
+        width: 100%
+    .title
+      margin: 0
+  &.-home
+    +max-width($phone-large)
+      background-position: -450px center
+    +max-width($phone-medium)
+      background-position: -550px center
+

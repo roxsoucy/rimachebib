@@ -1,0 +1,77 @@
+// ==========================================================================
+// MODULES - Icon block (Ex. sub menu page)
+// ==========================================================================
+
+$file-full-name: ('chauffage','svg', 61px, 50px, true), ('climatisation','svg', 60px, 67px, true), ('air','svg', 70px, 70px, true), ('faq','svg', 35px, 64px, true), ('ampoule','svg', 42px, 72px, true), ('residential','svg', 81px, 70px, false), ('commercial','svg', 85px, 91px, false), ('fan','svg', 65px, 65px, true), ('ice','svg', 60px, 60px, true), ('quality','svg', 50px, 70px, true), ('wine','svg', 35px, 80px, true)
+
+@each $file-name, $doc, $width, $height, $hover in $file-full-name
+	.icon-block.-#{$file-name}:before
+		background-image: url(../img/icon-#{$file-name}.#{$doc})
+		width: $width
+		height: $height
+		margin-left: -$width/2
+		top: -$height/2
+	@if $hover == true
+		.active .icon-block.-#{$file-name}:before,
+		.icon-block.-#{$file-name}.active:before,
+		.icon-block.-#{$file-name}:hover:before
+			background-image: url(../img/icon-#{$file-name}-active.#{$doc})
+
+.icon-block, a.icon-block
+	display: block
+	background: $ll-grey
+	color: $mm-grey
+	text-transform: uppercase
+	font-weight: 700
+	min-height: em(112)
+	font-size: em(18)
+	text-align: center
+	width: 100%
+	padding: em(45) 0 em(30)
+	+prefix(box-shadow, 0px 0px 30px 0px rgba(0, 0, 0, 0.25))
+	border: 3px solid #fff
+	position: relative
+	transition: all 0.2s linear 0.1s
+	+max-width($tablet-small)
+		min-height: em(80)
+	&:hover, .active &
+	  color: #000
+	  background: #fff
+	  text-decoration: none
+	&:before
+		content: ""
+		display: block
+		background-size: 100% auto
+		background-repeat: no-repeat
+		background-position: bottom
+		transition: background 0.2s linear 0.1s
+		position: absolute
+		left: 50%
+	&.-info
+		background: #ffffff
+
+	.menu &
+		+max-width($tablet-small)
+			padding: 1.5em 1.5em 1.3em 1em
+			font-size: 1em
+			+prefix(box-shadow, 0px 0px 20px 0px rgba(0, 0, 0, 0.2))
+			&:before
+				position: relative
+				left: 0
+				margin-left: 0
+				top: 0
+				background-size: auto 100%
+				background-position: center center
+				position: relative
+				display: inline-block
+				height: em(30)
+				vertical-align: middle
+				top: em(-2)
+				width: em(50)
+		+max-width($phone-medium)
+			font-size: 0.85em
+			&:before
+				font-size: em(12)
+
+
+

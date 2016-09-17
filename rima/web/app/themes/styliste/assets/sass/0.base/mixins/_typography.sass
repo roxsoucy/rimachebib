@@ -1,0 +1,46 @@
+// ==========================================================================
+// MIXINS - TYPOGRAPHY
+// ==========================================================================
+
+// FONT-FACE
+// exemple :
+// +font-face('bebasneue', '../fonts/BebasNeue-webfont', 'bebasneue')
+=font-face($family, $path, $svg: null, $weight: normal, $style: normal)
+  @if $svg==null
+    $svg: $family
+  @font-face
+    font-family: $family
+    src: url('#{$path}.eot')
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg')
+    font-weight: $weight
+    font-style: $style
+
+
+// FONT SMOOTHING
+=font-smoothing($value: on)
+  @if $value == on
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+  @else
+    -webkit-font-smoothing: subpixel-antialiased
+    -moz-osx-font-smoothing: auto
+
+// PLACEHOLDER
+=placeholder($color, $font-size, $fontstyle)
+  &::-webkit-input-placeholder
+    color: $color 
+    font-size: $font-size
+    font-style: $fontstyle
+  &:-moz-placeholder
+    color: $color 
+    font-size: $font-size
+    font-style: $fontstyle
+  &::-moz-placeholder
+    color: $color 
+    font-size: $font-size
+    font-style: $fontstyle
+  &:-ms-input-placeholder
+    color: $color 
+    font-size: $font-size
+    font-style: $fontstyle

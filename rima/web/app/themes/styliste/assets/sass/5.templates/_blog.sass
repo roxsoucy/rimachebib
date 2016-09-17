@@ -1,0 +1,48 @@
+// ==========================================================================
+// TEMPLATES - BLOG
+// ==========================================================================
+.blog
+  .columns
+    border: 1px solid $l-grey
+    position: relative
+    +grid(3, 0)
+    +max-width($tablet-large)
+      +grid(2,0)
+    +max-width($phone-large)
+      +grid(1,0)
+    &:before,
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      border-right: 1px solid $l-grey
+    &:after
+      left: 33.33%
+      +max-width($tablet-large)
+        display: none
+    &:before
+      right: 33.33%
+      +max-width($tablet-large)
+        right: 50%
+      +max-width($phone-large)
+        display: none
+    .col
+      vertical-align: top
+      text-align: center
+      margin-bottom: em(35)
+
+      img
+        padding: em(10)
+        width: 100%
+      .btn
+        display: inline
+        position: relative
+        bottom: em(-35)
+      article
+        margin: 0 em(10) em(10)
+        background: white
+        padding: em(20)
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15)
+        .description
+          min-height: em(100)

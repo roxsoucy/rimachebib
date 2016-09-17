@@ -1,0 +1,31 @@
+// ==========================================================================
+// TEMPLATES - SERVICES & BRANDS
+// ==========================================================================
+.services,
+.our-brands
+  .column
+    border-bottom: 1px solid $l-grey
+    padding-top: em(60)
+    padding-bottom: em(60)
+    .wrap
+      max-width: em(1024)
+  .columns
+    border-bottom: 1px solid $l-grey
+    +columns(50px, 60%, 40%)
+    +max-width($tablet-large)
+      +columns(0, 100%, 100%)
+      &:first-child
+        .col:first-child
+          padding-top: em(10)
+    &:last-child
+      border: none
+    .col
+      padding-top: em(60)
+      padding-bottom: em(60)
+      +max-width($tablet-large)
+        padding-bottom: 0
+        &:last-child
+          padding-bottom: 0
+          padding-top: 0
+      +max-width($phone-large)
+        padding-top: em(30)

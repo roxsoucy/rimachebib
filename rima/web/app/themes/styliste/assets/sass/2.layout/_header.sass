@@ -1,0 +1,59 @@
+// ==========================================================================
+// LAYOUT - HEADER
+// ==========================================================================
+
+header
+  &.main-banner
+    height: em(120)
+    background-color: white
+    position: fixed
+    top: 0
+    z-index: 999
+    width: 100%
+    +max-width($tablet-large)
+      height: em(75)
+    &:before
+      content: ''
+      width: 100%
+      position: absolute
+      border-bottom: 1px solid $l-grey
+      top: 49%
+      left: 30%
+      z-index: -1
+    .wrapper
+      height: 100%
+      +max-width($tablet-large)
+        background-color: white
+      .columns
+        background-color: white
+        height: 100%
+        +columns(0, 30%, 70%)
+        +max-width($tablet-small)
+          +columns(0, 50%, 50%)
+        +max-width($phone-large)
+          +columns(0, 63%, 37%)
+        .logo
+          padding-right: em(50)
+          height: 100%
+          +align-children($v-align: middle)
+          +max-width($tablet-large)
+            padding-right: em(10)
+          img
+            max-width: em(305)
+            min-width: em(150)
+
+          a
+            display: inline
+            display: inline
+        .col
+          border-left: 1px solid $l-grey
+          height: 100%
+          .phone
+            width: 100%
+            vertical-align: middle
+            text-align: right
+            +align-children($v-align: middle)
+            height: 50%
+            border-bottom: 1px solid $l-grey
+          .nav-wrap
+            height: 50%

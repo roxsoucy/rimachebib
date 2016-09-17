@@ -1,0 +1,53 @@
+// ==========================================================================
+// MODULES - HISTORY
+// ==========================================================================
+
+.history
+  position: relative
+  &:before
+    content: ''
+    height: 100%
+    background-color: rgba($main-color, 0.9)
+    // background-blend-mode: multiply
+    width: 50%
+    position: absolute
+    // mix-blend-mode: multiply
+    z-index: 0
+    .backgroundblendmode &
+      mix-blend-mode: multiply
+      background-color: $main-color
+    +max-width($tablet-small)
+      width: 0
+      // height: 50%
+  .wrapper
+    height: 100%
+    .columns
+      height: 100%
+      vertical-align: middle
+      +columns(60px, 42%, 58%)
+      +max-width($tablet-small)
+        +columns(0, 100%, 100%)
+      .-super
+        font-size: 78px
+        text-align: right
+        margin-top: 4%
+        position: relative
+        z-index: 2
+        +max-width($tablet-small)
+          //text-align: left
+          font-size: 50px
+          color: $main-color
+          margin: 0 0 em(-10) 0
+      .story
+        background-color: white
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25)
+        padding: em(50)
+        position: relative
+        max-width: em(580)
+        +max-width($tablet-small)
+          max-width: none
+        .btn
+          position: absolute
+          text-align: center
+          bottom: em(-25)
+          right: em(30)

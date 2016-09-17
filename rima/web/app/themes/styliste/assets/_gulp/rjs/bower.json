@@ -1,0 +1,32 @@
+{
+  "name": "default",
+  "private": "true",
+  "dependencies": {
+    "almond": "~0.3",
+    "jquery": "~1",
+    "js-cookie": "~2.0",
+    "jquery-validate": "~1",
+    "select2": "~4",
+    "matchHeight": "~0.6",
+    "colorbox": "~1.6",
+    "o2-flexslider": "~2.5",
+    "o2-bxslider": "~4.2.6",
+    "swiper": "~3",
+    "o2-raf": "~1",
+    "o2-breakpoints": "~1",
+    "o2-scrollevents": "~1",
+    "o2-parallax": "~1",
+    "o2-sticky": "~1"
+  },
+  "install": {
+    "path": {
+      "js": "../../js/plugins",
+      "css": "../../css/plugins",
+      "/[jpg|jpeg|png|gif]$/": "../../img/plugins"
+    },
+    "sources": {
+      "jquery": "../../js/vendor/jquery/dist/jquery.min.js",
+      "o2-raf": "../../js/vendor/o2-raf/raf.js"
+    }
+  }
+}

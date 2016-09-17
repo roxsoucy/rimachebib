@@ -1,0 +1,19 @@
+// ==========================================================================
+// MIXINS - MEDIA QUERIES
+// ==========================================================================
+
+=screen($minmax: max, $width: 1024px)
+  @media only screen and (#{$minmax}-width: $width)
+    @content
+
+=min-width($width)
+  @media only screen and (min-width: $width)
+    @content
+
+=max-width($width)
+  @media only screen and (max-width: $width)
+    @content
+
+=print()
+  @media only print
+    @content

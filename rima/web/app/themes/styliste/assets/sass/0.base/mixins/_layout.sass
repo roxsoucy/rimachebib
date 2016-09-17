@@ -1,0 +1,92 @@
+// ==========================================================================
+// MIXINS - LAYOUT
+// ==========================================================================
+
+// CLEARFIX
+=clearfix
+  zoom: 1
+  &:before, &:after
+    content: "\0020"
+    display: block
+    height: 0
+    overflow: hidden
+  &:after
+    clear: both
+
+// INLINE-BLOCK
+=inlineb
+  display: inline-block
+  *display: inline
+  zoom: 1
+
+//
+//
+// ALIGN CHILDREN
+// la fonction «align-middle» qui peut être utilisée peut importe l'alignement vertical
+=align-children($v-align: middle)
+  +inlineb
+  vertical-align: $v-align
+  &:before
+    content: ""
+    +inlineb
+    height: 100%
+    width: 0
+    vertical-align: $v-align
+    margin-right: -0.3em
+  &>*
+    +inlineb
+    vertical-align: $v-align
+
+
+// FLEXIBLE GRID, FIXED GUTTERS
+=grid($cols: 3, $gutters: 25px)
+  font-size: 0
+  word-spacing: 0
+  line-height: 0
+  margin: 0 ($gutters/-2) 0 ($gutters/-2)
+  &>*
+    +inlineb
+    font-size: 16px
+    font-size: 1rem
+    font-size: initial
+    word-spacing: normal
+    line-height: 1
+    width: round(100% / $cols * 100) / 100
+    padding: 0 ($gutters/2) $gutters
+
+
+// FLEXIBLE COLUMNS, FIXED GUTTERS
+=columns($gutters, $columns...)
+  font-size: 0
+  word-spacing: 0
+  line-height: 0
+  margin: 0 ($gutters/-2) 0 ($gutters/-2)
+  &>*
+    +inlineb
+    font-size: 16px
+    font-size: 1rem
+    font-size: initial
+    word-spacing: normal
+    line-height: 1
+    padding: 0 ($gutters/2)
+    vertical-align: top
+    &:first-child
+      width: #{nth($columns, 1)}
+      $selector: ""
+      @if length($columns) > 1
+        @for $i from 2 through length($columns)
+          $selector: #{$selector}#{"+*"}
+          &#{$selector}
+            width: #{nth($columns, $i)}
+
+
+
+// COLUMNS
+=css-columns($n: 1, $gap: 1em)
+  -webkit-column-count: $n
+  -moz-column-count: $n
+  column-count: $n
+  @if $gap
+    -webkit-column-gap: $gap
+    -moz-column-gap: $gap
+    column-gap: $gap

@@ -1,0 +1,77 @@
+// ==========================================================================
+// MODULES - NEWS HOME
+// ==========================================================================
+.banner.-home
+  .news//.wrapper
+    article//.bx-wrapper
+      width: 50%
+      position: relative
+      background-color: white
+      padding: em(25) em(55) em(25) em(34)
+      margin-top: em(60)
+      z-index: 2
+      +max-width($tablet-large)
+        width: 75%
+      +max-width($phone-large)
+        margin-top: em(20)
+        max-height: em(250)
+        //overflow: hidden
+        padding: em(25)
+      &:before
+        content: ''
+        +gradient($start: rgba(255,255,255, 1), $end: rgba(255,255,255, 0), $from: right, $to: left)
+        height: 100%
+        width: em(150)
+        position: absolute
+        top: 0
+        right: 100%
+        z-index: 0
+      .bx-controls
+        position: absolute
+        right: em(10)
+        top: em(10)
+        vertical-align: middle
+        .bx-controls-direction
+          position: relative
+          height: em(25)
+          .bx-prev,
+          .bx-next
+            display: inline-block
+            height: em(25)
+            position: relative
+            &:before
+              color: $m-grey
+            &:hover
+              text-decoration: none
+          .bx-prev
+            +icon(before, triangle-left)
+          .bx-next
+            +icon(before, triangle-right)
+
+
+      .date
+        font-size: em(14)
+        color: $m-grey
+        margin-bottom: em(10)
+        +icon(before, clock)
+        &:before
+          padding-right: em(10)
+        +max-width($phone-large)
+          font-size: em(12)
+
+      .title
+        color: $black
+        font-size: em(18)
+        margin-bottom: em(8)
+        margin-top: 0
+      main
+        p
+          font-size: em(14)
+          color: $mm-grey
+          margin-bottom: em(15)
+          // display: inline
+        .btn
+          display: inline-block
+          font-size: em(12)
+
+          float: right
