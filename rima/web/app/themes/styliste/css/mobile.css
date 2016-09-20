@@ -3,14 +3,26 @@
 	.navbar-brand{
 		padding: 23px 0;
 	}
+/**** section2 *****/
+
+	section.section2 .-icon img{
+		/*max-width: 100px;*/
+		padding-right: 20px;
+	}
 }
 
 @media(max-width:767px){
 	body{
-		font-size: 22px;
+		font-size: 16px;
 	}
 
 /*********      nav      ********/		
+	.navbar-fixed-middle{
+		top:0;
+		transform: translateY(0);
+		width: 100%;
+		right: 0;
+	}
 	.navbar-toggle {
 	    margin-top: 40px;
 	    margin-right: 20px;
@@ -26,7 +38,7 @@
 	    right: 0;
 	    margin: 0;
 	    z-index: 10;
-	    background: rgba(18,45,63,0.9);
+	    background: rgba(25,25,25,0.9);
 	}
 	a.navbar-brand img{
 		margin-left: 20px;
@@ -49,6 +61,11 @@
 	.navbar-collapse ul.navbar-nav li a:hover{
 		color: white;
 	}
+	.title{
+		margin: 0;
+		padding-bottom: 25px;
+		font-size: 60px;
+	}
 
 /*********      hero      ********/
 	.hero h1{
@@ -63,8 +80,24 @@
 	}
 	/*********      section2      ********/
 	section.section2 {
-	    font-size: 22px;
+	    font-size: 16px;
 	 }
+	section.section2 .-icon img{
+		max-width: 125px;
+		padding: 0;
+		padding-bottom: 10px;
+	}
+	section.section2 .row.-service{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+
+
+	section.section2 .row.-service .-closet{
+		top: 0;
+	}
+
 	 /*************        contact           ******************/
 	.widget_bizohourswidget{
 		margin-top: 50px;
@@ -95,4 +128,19 @@
 	.section1 .container, .section2 .container, .contact .container, .footer .container{
 		padding: 50px 25px;
 	}	
+}
+@media(max-width:660px){
+	.col-full{
+		width: 100%;
+	}
+	section.section1{
+		background-image: none !important;
+	}
+	section.section1 .container{
+		padding-bottom: 0;
+	}
+	section.section1 .col-full img{
+		margin: 0 auto;
+		display: block;
+	}
 }

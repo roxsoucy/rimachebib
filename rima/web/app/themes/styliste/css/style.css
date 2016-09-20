@@ -1,8 +1,8 @@
 body{
-	font-family: 'lato';
+	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	height:100%;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 300;
 	-webkit-box-sizing: border-box;‌​
 	-moz-box-sizing: border-box;
@@ -17,17 +17,43 @@ body{
 	position: relative;
     z-index: 3;
 }
-h1{
-	font-family: 'aleo';
-	color: #3f97d3;
+.title{
+	font-family: 'Dancing Script', cursive;
+	color: #000;
 	font-weight: bold;
-	font-size: 55px;
+	font-size: 70px;
 	text-transform: lowercase;
 	letter-spacing: 1px;
 	padding: 0 0 50px 20px;
 }
+.navbar-default .navbar-nav>li>a{
+	color: #d3a94a;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav>.active>a{
+	text-transform: none;
+}
 /******nav******/
-nav{
+.navbar-default .navbar-toggle:hover{
+	background-color: black !important;
+}
+.navbar-default .navbar-toggle{
+	background-color: #d3a94a;
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	border-radius: 0;
+}
+
+
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+/*nav{
 	font-size: 14px;
 	font-family: 'aleo';
 	font-weight: normal;
@@ -40,11 +66,7 @@ nav{
 	margin: 0;
 }
 
-.navbar-default .navbar-nav>li>a{
-	letter-spacing: 1px;
-	color: white;
-	padding-top: 25px;
-}
+
 .navbar-brand{
 	padding: 0;
 }
@@ -69,14 +91,7 @@ nav{
 	border: none;
 }
 }
-.navbar-default .navbar-toggle:hover{
-	background-color: transparent !important;
-}
 
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
-}
 .navbar-default.navbar-shrink {
     height: 120px;
     padding: 10px 0;
@@ -93,14 +108,17 @@ nav{
 }
 .navbar .container ul li ul li a button:hover{
 	color: #AAA;
-}
+}*/
 /******hero*****/
 .hero {
     height: 40em;
     width: 100%;
     position: relative;
+    background-size: cover;
     z-index: 1;
     overflow: hidden;
+    background-attachment: fixed;
+    background-position: 100% 100%;
 }
 .hero h1{
 	color: white;
@@ -147,19 +165,20 @@ section.section1 {
     width: 100%;
     position: relative;
     z-index: 1;
+    border:10px solid #d3a94a;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 370px 555px;
 }
-.section1-centered img {
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	margin: auto;
+section.section1 .col-full img{
+	display: none;
 }
+
 /******section2*****/
 section.section2 {
-	color: #FFF;
+	color: #000;
+	border:10px solid #000;
     width: 100%;
     font-size: 18px;
     position: relative;
@@ -167,21 +186,61 @@ section.section2 {
     overflow: hidden;
 }
 
-section.section2 h1{
+section.section2 h1.title{
+	color: #d3a94a;
+}
+
+
+section.section2 .-icon.-closet{
+	position: relative;
+	top: 45px;
+}
+
+section.section2 .row.-service p{
+	max-width: 600px;
+}
+
+
+section.section2 .-icon img{
+	max-width: 125px;
+	padding-top: 20px;
+}
+section.section2 .row.-service a{
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #d3a94a;
 	color: white;
+	font-weight: bold;
+	transition: all 0.2s;
 }
 
-.informatique, .reseaux, .wifi, .telephone, .son, .camera{
-	text-align: center;
-	padding: 40px;
+section.section2 .row.-service a:hover{
+	text-decoration: none;
+	background-color: black;
 }
 
-.informatique strong, .reseaux strong, .wifi strong, .telephone strong, .son strong, .camera strong{
-	font-family: 'aleo';
-	font-weight: 100;
-	font-size: 30px;
-	letter-spacing: 1px;
-	text-align: center;
+section.section2 .-icon.-bag img{
+	max-width: 90px;
+}
+
+
+section.section2 .row.-service{
+	margin-bottom: 60px;
+}
+section.section2 .row.-service .time,
+section.section2 .row.-service .price{
+	color: #d3a94a;
+	position: relative;
+	font-size: 15px;
+}
+section.section2 .row.-service .time i,
+section.section2 .row.-service .price i{
+	position: relative;
+	margin-right: 5px;
+	font-size: 20px;
+}
+section.section2 .row.-service .time{
+	margin-right: 15px;
 }
 
 .section2-centered img {

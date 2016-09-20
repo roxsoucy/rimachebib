@@ -2,28 +2,18 @@
 
 	<main role="main">
 		<!-- section -->
-		<section id="apropos" class="section1">
+		<section id="apropos" class="section1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/placeholder.jpg);">
 			<div class="container">
 				<div class="row">
 					<h1 class="title"><?php the_field('titre_section1'); ?></h1>
 				</div>
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-xs-7 col-full">
 						<?php the_field('texte_section1'); ?>
 					</div>
-					<div class="col-md-1"></div>
-					<div class="col-md-7">
-						<?php if ( function_exists( 'easingslider' ) ) { easingslider( 41 ); } ?>
-					</div>					
+					<div class="col-xs-5 col-full"><img src="<?php echo get_template_directory_uri(); ?>/img/placeholder.jpg" width="250" height="375"></div>				
 				</div>
 			</div>
-
-
-	    	<div class="section1-centered">
-	    		
-	    		<img src="<?php the_field('image_section1'); ?>" />
-	    	</div>
-	    	<div class="color-filter -opacity-normal" style="background-color:<?php the_field('fitre_section1'); ?>"></div>
 		</section>
 		<!-- /section1 -->
 
@@ -33,39 +23,75 @@
 				<div class="row">
 					<h1 class="title"><?php the_field('titre_section2'); ?></h1>
 				</div>
-				<div class="row">
-					<div class="col-sm-4 informatique">
-						<i class="fa fa-laptop fa-5x"></i>
-						<p><?php the_field('texte_informatique'); ?></p>
+				<div class="row -service">
+					<div class="col-sm-2 -icon -closet">
+						<img src="<?php the_field('icone_penderie'); ?>">
 					</div>
-					<div class="col-sm-4 reseaux">
-						<i class="fa fa-globe fa-5x"></i>
-						<p><?php the_field('texte_reseaux'); ?></p>
+					<div class="col-sm-10">
+						<p><?php the_field('penderie'); ?></p>
+						<div>
+							<span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i><?php the_field('temps_penderie'); ?></span>
+							<span class="price"><i class="fa fa-tags" aria-hidden="true"></i><?php the_field('prix_penderie'); ?></span>
+						</div>
 					</div>
-					<div class="col-sm-4 wifi">
-						<i class="fa fa-wifi fa-5x"></i>
-						<p><?php the_field('texte_wifi'); ?></p>
-					</div>											
 				</div>
-				<div class="row">
-					<div class="col-sm-4 camera">
-						<i class="fa fa-video-camera fa-5x"></i>
-						<p><?php the_field('texte_camera'); ?></p>
+				<div class="row -service">	
+					<div class="col-sm-2 -icon -bag">
+						<img src="<?php the_field('icone_magasinage'); ?>">
 					</div>
-					<div class="col-sm-4 telephone">
-						<i class="fa fa-fax fa-5x"></i>
-						<p><?php the_field('texte_telephone'); ?></p>
+					<div class="col-sm-10">
+						<p><?php the_field('magasinage'); ?></p>
+						<div>
+							<span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i><?php the_field('temps_magasinage'); ?></span>
+							<span class="price"><i class="fa fa-tags" aria-hidden="true"></i><?php the_field('prix_magasinage'); ?></span>
+						</div>
 					</div>
-					<div class="col-sm-4 son">
-						<i class="fa fa-volume-up fa-5x"></i>
-						<p><?php the_field('texte_son'); ?></p>
-					</div>											
+				</div>
+				<div class="row -service">
+					<div class="col-sm-2 -icon">
+						<img src="<?php the_field('icone_style'); ?>">
+					</div>
+					<div class="col-sm-10">
+						<p><?php the_field('style'); ?></p>
+						<div>
+							<span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i><?php the_field('temps_style'); ?></span>
+							<span class="price"><i class="fa fa-tags" aria-hidden="true"></i><?php the_field('prix_style'); ?></span>
+						</div>						
+					</div>										
+				</div>
+				<div class="row -service">
+					<div class="col-sm-2 -icon">
+						<img src="<?php the_field('icone_vacances'); ?>">
+					</div>
+					<div class="col-sm-10">
+						<p><?php the_field('vacances'); ?></p>
+						<div>
+							<span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i><?php the_field('temps_vacances'); ?></span>
+							<span class="price"><i class="fa fa-tags" aria-hidden="true"></i><?php the_field('prix_vacances'); ?></span>
+						</div>		
+					</div>
+				</div>
+				<div class="row -service">
+					<div class="col-sm-2 -icon">
+						<img src="<?php the_field('icone_glamour'); ?>">
+					</div>
+					<div class="col-sm-10">
+						<p><?php the_field('glamour'); ?></p>
+						<div>
+							<span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i><?php the_field('temps_glamour'); ?></span>
+							<span class="price"><i class="fa fa-tags" aria-hidden="true"></i><?php the_field('prix_glamour'); ?></span>
+						</div>						
+					</div>
+				</div>
+				<div class="row -service">
+					<div class="col-sm-2 -icon">
+						<img src="<?php the_field('icone_elora'); ?>">
+					</div>
+					<div class="col-sm-10">
+						<p><?php the_field('elora'); ?></p>
+					</div>									
 				</div>				
 			</div>
-	    	<div class="section2-centered">
-	    		<img src="<?php the_field('image_section2'); ?>" />
-	    	</div>
-	    	<div class="color-filter -opacity-dark" style="background-color:<?php the_field('filtre_section2'); ?>"></div>
 		</section>
 		<!-- /section2 -->	
 
