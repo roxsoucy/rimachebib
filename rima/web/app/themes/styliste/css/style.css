@@ -12,7 +12,7 @@ body{
 .wrapper{
 	width: 100%; 
 }
-.section1 .container, .section2 .container, .contact .container, .footer .container{
+.section1 .container, .section2 .container, .contact .container{
 	padding: 100px 50px;
 	position: relative;
     z-index: 3;
@@ -33,9 +33,12 @@ body{
 .navbar-default .navbar-nav>.active>a{
 	text-transform: none;
 }
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover{
+	color: silver;
+}
 /******nav******/
 .navbar-default .navbar-toggle:hover{
-	background-color: black !important;
+	background-color: silver !important;
 }
 .navbar-default .navbar-toggle{
 	background-color: #d3a94a;
@@ -97,11 +100,7 @@ body{
     padding: 10px 0;
     background-color: rgba(18,45,63, 0.9);
 }
-.navbar-default .navbar-nav>.active>a{
-	background-color: inherit;
-	color: #FFF;
-	border-bottom: solid 3px white;
-}
+
 .navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:visited,.navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:visited,.navbar-default .navbar-nav>.active>a:active,.navbar-default .navbar-nav>.active>a:focus{
 	background-color: transparent;
 	color: #AAA;
@@ -109,6 +108,10 @@ body{
 .navbar .container ul li ul li a button:hover{
 	color: #AAA;
 }*/
+.navbar-default .navbar-nav>.active>a{
+	background-color: inherit;
+	color: #d3a94a;
+}
 /******hero*****/
 .hero {
     height: 40em;
@@ -251,15 +254,31 @@ section.section2 .row.-service .time{
 	right: 0px;
 	margin: auto;
 }
+/******lookbook****/
+#lookbook{
+	background-color: black;
+}
+.envira-gallery-public,
+.envira-gallery-wrap{
+	margin: 0 !important;
+}
 /******contact*****/
 section.contact {
     width: 100%;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    color: white;
+}
+section.contact a{
+	color: white;
+	text-decoration: underline;
+}
+section.contact a:hover{
+	color: #d3a94a;;
 }
 section.contact h1{
-	color: white;
+	color: #d3a94a;
 }
 .contact-centered img {
 	position: absolute;
@@ -271,19 +290,26 @@ section.contact h1{
 }
 section.contact div[role=form]{
 	color: white;
-	font-family: 'aleo';
 	width: 100%;
 }
 section.contact div[role="form"] p{
 	letter-spacing: 1px;
+	font-weight: bold;
 }
 
 input[type="text"], input[type="email"], textarea {
      width: 100%;
-     margin-bottom: 20px;
-     margin-top: 10px;
-     background-color: rgba(63, 151, 211, 0.7);
-     border: 1px solid #FFF;
+     margin-bottom: 20px !important;
+     margin-top: 10px !important;
+     background-color: white;
+     border: none;
+     font-weight: normal;
+     padding: 10px;
+     color: black;
+     box-shadow: none;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+	outline: #d3a94a solid 2px;
 }
 input[type="text"], input[type="email"], input[type="submit"]{
 	height: 40px;
@@ -303,9 +329,13 @@ input[type="radio"]:checked{
 
 input[type="submit"]{
 	width: 50%;
-	background: transparent;
-	border: 1px solid #FFF;
-	font-weight: normal;
+	background: #d3a94a;
+	border: none;
+	font-weight: bold;
+}
+
+input[type="submit"]:hover{
+	background: black;
 }
 
 .widget_bizohourswidget{
@@ -342,22 +372,16 @@ input[type="submit"]{
 	font-weight: 300;
 	font-size: 16px;
 }
-.footer img{
-	width: 200px;
-	height: auto;
-}
+
 
 
 .footer .copyright{
 	font-weight: 300;
 	letter-spacing: 1px;
-	font-size: 16px;
-	margin-top: 60px;
+	font-size: 12px;
+	margin: 0;
 	text-align: center;
 }
-.partenaire{
-	margin-bottom: 30px;
-	text-align: right;
-}
+
 
 

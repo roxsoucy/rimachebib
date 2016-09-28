@@ -94,7 +94,9 @@
 			</div>
 		</section>
 		<!-- /section2 -->	
-
+		<section id="lookbook">
+			<?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( 'lookbook', 'slug' ); } ?>
+		</section>
 
 		<section id="contact" class="contact">
 			<div class="container">
@@ -105,10 +107,11 @@
 					<div class="col-sm-7">
 						<?php echo do_shortcode( '[contact-form-7 id="48" title="Formulaire de contact 1"]' ); ?>
 					</div>
-					<div class="col-sm-1"></div>
+					
 					<div class="col-sm-4">
-						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
-					</div>					
+						<?php the_field('coordonnees'); ?>
+					</div>	
+					<div class="col-sm-1"></div>				
 				</div>
 			</div>
 			<!-- /article -->

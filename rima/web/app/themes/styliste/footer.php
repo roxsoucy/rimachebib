@@ -2,22 +2,9 @@
 			<footer class="footer" role="contentinfo">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-7">
-							<p>
-								560, avenue du Phare Est, Matane (Québec)&nbsp;&nbsp;G4W&nbsp;1A7<br>
-								<i class="fa fa-phone"></i> 418&nbsp;562&#8209;3359<br>
-								<span>Sans&nbsp;frais:</span>&nbsp;1&nbsp;866&nbsp;562&#8209;3359 <span>Télécopieur:</span>&nbsp;418&nbsp;566&#8209;2154<br>
-							</p>						
-						</div>
-						<div class="col-sm-5">
-							<div class="row partenaire"><a href="http://www.milleniummicro.ca/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-mil.png"/></a></div>
-							<div class="row partenaire"><a href="https://www.itcloud.ca/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/itcloud_logo.png"/></a></div>
-						</div>
-					</div>
-					<div class="row">
 						<!-- copyright -->
 						<p class="copyright">
-							Copyright &copy; <?php echo date('Y'); ?>  <strong><?php bloginfo('name'); ?>, Solutions PME</strong>. Tous droits réservés.	
+							Copyright &copy; <?php echo date('Y'); ?>  <strong><?php bloginfo('name'); ?></strong>. Tous droits réservés.	
 						</p>
 					</div>
 				<!-- /copyright -->
